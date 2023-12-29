@@ -1,15 +1,13 @@
 # Test Boot in ugit_test
-
-
-import machine
 import time
+import machine
+led= machine.Pin('LED', machine.Pin.OUT)
 
-print('hello ugit users!')
-
-print('I am working on an issue with ugit running into mem errors when connected to a computer')
-print('ugit seems to work well when battery powered or not in an active REPL session.')
-
-print('I hope you enjoy it!')
+while True:
+   led.on()
+   time.sleep(1)
+   led.off()
+   time.sleep(1)
     
 
 
